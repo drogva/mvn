@@ -7,5 +7,8 @@ COPY target/mvn-0.0.1-SNAPSHOT.jar /app/boot.jar
 # 작업 디렉토리를 /app으로 설정합니다.
 WORKDIR /app
 
+# 포트를 열어줍니다.
+EXPOSE 9110
+
 # 애플리케이션을 실행합니다.
 CMD ["java", "-jar", "boot.jar"]
