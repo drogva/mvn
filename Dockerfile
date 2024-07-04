@@ -1,5 +1,5 @@
 # 기본 베이스 이미지로 OpenJDK 17을 사용합니다.
-FROM openjdk:17-alpine3.19
+FROM openjdk:17-alpine
 
 # 애플리케이션 JAR 파일을 /app 디렉토리로 복사합니다.
 COPY target/mvn-0.0.1-SNAPSHOT.jar /app/boot.jar
